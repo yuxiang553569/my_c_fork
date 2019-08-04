@@ -1,0 +1,172 @@
+server:	
+switch(flag)
+	{
+		case 1://用户登陆，
+		{							
+			dlg->dealLogin(msgcount, buff);		
+			break;
+		}
+		case 2://用户选择某游戏桌某一座位
+		{
+			dlg->dealSit(msgcount, buff);
+			break;
+		}
+		case 3://用户点击开始，
+		{
+			dlg->dealStart(msgcount, buff);
+			break;
+		}
+		case 4://有人不愿当地主了
+		{
+			int yes =(int)buff[1];
+			dlg->dealChangeHost(msgcount, yes);
+			break;
+		}
+		case 5://处理在打牌了
+		{
+			dlg->dealSendCards(msgcount, buff);
+			break;
+		}
+		case 6://离开游戏桌子
+		{
+			dlg->dealLeftDesk(msgcount);
+			break;
+		}
+		case 7://处理离开大厅
+		{
+			dlg->dealExit(msgcount);
+			break;
+		}
+		default:
+		{			
+			//dlg->sendRoomInf(msgcount);
+			break;
+		}
+						
+	}//end switch
+client:
+	CClientDlg *dlg = (CClientDlg *) AfxGetApp()->GetMainWnd();	
+	switch(flag)
+	{
+	case 1:
+		{
+			dlg->writeRoom(buffer+1);
+			players++;
+			break;
+		}		
+	case 2: //当前单击的这个座位是否能坐
+		{
+			int cansit = (int)buffer[1];
+			dlg->ContinueModal();
+			if(cansit==1)
+			{	
+				state = sitdown;
+				dlg->m_room.ShowWindow(SW_SHOW);
+				m_start.ShowWindow(SW_SHOW);
+				dlg->Invalidate();				
+			}				
+			else
+			{
+				MessageBox("该位置有人了，大哥");
+			}
+			break;
+		}
+	case 3: //接服务器发过来的牌
+		{	
+			mycards.clear();
+			pukInf.ishost = ((puk*)(buffer+1))->ishost;
+			memcpy(pukInf.hostname ,((puk*)(buffer+1))->hostname, sizeof(((puk*)(buffer+1))->hostname));
+			pukInf.cansend	= ((puk*)(buffer+1))->cansend;
+			memcpy(pukInf.puk, ((puk*)(buffer+1))->puk, sizeof(((puk*)(buffer+1))->puk));
+			for(int c=0; c<17; c++)//将扑克插入链表
+			{	
+				tmpinf[c].selected = FALSE;
+				int card = (int)pukInf.puk[c];
+				mycards.push_back(card);				
+			}
+			for(c=17;c<20;c++)
+			{
+				tmpinf[c].selected = FALSE;
+			}
+			mycards.sort();
+			show = TRUE;			
+			state = wait;//游戏开始
+			ask = TRUE;
+			m_playcard.ShowWindow(SW_HIDE);
+			m_pass.ShowWindow(SW_HIDE);
+			dlg->m_room.Invalidate();		
+			PostMessage(WM_PAINT,NULL, NULL);
+			break;
+		}
+	case 4: //是否愿意当地主
+		{	
+			hostsit = (int)buffer[1];
+			dealhost();			
+			break;
+		}
+	case 5: //上家出的牌。
+		{
+			othercards.clear();//先将上次清空			
+			m_pass.ShowWindow(SW_SHOW);
+			m_playcard.ShowWindow(SW_SHOW);			
+			dealplay(buffer+1);
+			break;
+		}
+	case 6: //回合结束，显示分数
+		{
+			pukInf.cansend = FALSE;
+			MessageBox("哪个家伙赢了啊");
+			startsit = 0;
+			state = wait;
+			dlg->m_start.ShowWindow(SW_SHOW);
+			dlg->m_start.EnableWindow(TRUE);
+			break;
+		}
+	case 7: //接受服务器发来的大厅信息并进行更新数据
+		{
+			dlg->updateRoom(buffer+1);			
+			break;
+		}
+	case 8: // 接服务器发来的判断自己出的牌是否符合出牌规则
+		{				
+			dealsend(buffer+1);
+			break;
+		}
+	case 9: //能否登陆 
+		{
+			int log = buffer[1];
+			if(log==1)//登陆成功，读信息，贴图片
+			{				
+				dlg->showRoom();			
+				state = login;				
+				dlg->Invalidate();
+			}
+			else
+			{							
+				dlg->MessageBox("重名了", NULL, MB_OK);				
+				state = wrong;						
+				dlg->reshow();
+			}
+			break;
+		}
+	case 10: //有人点开始了，buffer[1]是座位号
+		{
+			state = wait;
+			startsit = (int)buffer[1];
+			break;
+		}
+	case 11://有人当地主了，buffer[1]  是座位号
+		{
+			state = gaming;
+			hostsit=(int)buffer[1];
+			//地主的牌多显示三张
+			if(hostsit!=sid)//自己不是地主的时候
+			{
+				decidehost(hostsit);
+			}
+			break;
+		}
+	default:
+		{
+			break;
+		}

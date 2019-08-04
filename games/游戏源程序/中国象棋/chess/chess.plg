@@ -1,0 +1,69 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: chess - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/chess.res" /d "NDEBUG" /d "_AFXDLL" "C:\Documents and Settings\Administrator\桌面\vc编写中国象棋-详细源码+注释\chess\chess.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D7.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/chess.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Administrator\桌面\vc编写中国象棋-详细源码+注释\chess\chess.cpp"
+"C:\Documents and Settings\Administrator\桌面\vc编写中国象棋-详细源码+注释\chess\chessDlg.cpp"
+"C:\Documents and Settings\Administrator\桌面\vc编写中国象棋-详细源码+注释\chess\Eveluation.cpp"
+"C:\Documents and Settings\Administrator\桌面\vc编写中国象棋-详细源码+注释\chess\MoveGenerator.cpp"
+"C:\Documents and Settings\Administrator\桌面\vc编写中国象棋-详细源码+注释\chess\NegaMaxEngine.cpp"
+"C:\Documents and Settings\Administrator\桌面\vc编写中国象棋-详细源码+注释\chess\NewGame.cpp"
+"C:\Documents and Settings\Administrator\桌面\vc编写中国象棋-详细源码+注释\chess\SearchEngine.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D7.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D8.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/chess.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Administrator\桌面\vc编写中国象棋-详细源码+注释\chess\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D8.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D9.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/chess.pdb" /machine:I386 /out:"Release/chess.exe" 
+".\Release\chess.obj"
+".\Release\chessDlg.obj"
+".\Release\Eveluation.obj"
+".\Release\MoveGenerator.obj"
+".\Release\NegaMaxEngine.obj"
+".\Release\NewGame.obj"
+".\Release\SearchEngine.obj"
+".\Release\StdAfx.obj"
+".\Release\chess.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D9.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+chess.cpp
+chessDlg.cpp
+Eveluation.cpp
+MoveGenerator.cpp
+C:\Documents and Settings\Administrator\桌面\vc编写中国象棋-详细源码+注释\chess\MoveGenerator.cpp(346) : warning C4101: 'flag' : unreferenced local variable
+C:\Documents and Settings\Administrator\桌面\vc编写中国象棋-详细源码+注释\chess\MoveGenerator.cpp(345) : warning C4101: 'x' : unreferenced local variable
+C:\Documents and Settings\Administrator\桌面\vc编写中国象棋-详细源码+注释\chess\MoveGenerator.cpp(345) : warning C4101: 'y' : unreferenced local variable
+NegaMaxEngine.cpp
+NewGame.cpp
+SearchEngine.cpp
+Generating Code...
+Linking...
+Creating command line "bscmake.exe /nologo /o"Release/chess.bsc"  ".\Release\StdAfx.sbr" ".\Release\chess.sbr" ".\Release\chessDlg.sbr" ".\Release\Eveluation.sbr" ".\Release\MoveGenerator.sbr" ".\Release\NegaMaxEngine.sbr" ".\Release\NewGame.sbr" ".\Release\SearchEngine.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+chess.exe - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

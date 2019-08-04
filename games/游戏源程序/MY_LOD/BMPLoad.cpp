@@ -1,0 +1,27 @@
+// BMPLoad.cpp: implementation of the CBMPLoad class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "MY_LOD.h"
+#include "BMPLoad.h"
+
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[]=__FILE__;
+#define new DEBUG_NEW
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CBMPLoad::CBMPLoad()
+{
+
+}
+
+CBMPLoad::~CBMPLoad()
+{
+
+}

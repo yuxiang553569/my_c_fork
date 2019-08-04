@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: donghua - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "X:\TEMP\RSP455.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/donghua.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"X:\donghua\donghua.cpp"
+]
+Creating command line "cl.exe @X:\TEMP\RSP455.tmp" 
+Creating temporary file "X:\TEMP\RSP456.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/donghua.pdb" /machine:I386 /out:"Release/donghua.exe" 
+.\Release\donghua.obj
+]
+Creating command line "link.exe @X:\TEMP\RSP456.tmp"
+<h3>Output Window</h3>
+Compiling...
+donghua.cpp
+X:\donghua\donghua.cpp(63) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+X:\donghua\donghua.cpp(63) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+X:\donghua\donghua.cpp(86) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+X:\donghua\donghua.cpp(86) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+X:\donghua\donghua.cpp(140) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+X:\donghua\donghua.cpp(140) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+X:\donghua\donghua.cpp(163) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+X:\donghua\donghua.cpp(163) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+Linking...
+
+
+
+<h3>Results</h3>
+donghua.exe - 0 error(s), 8 warning(s)
+</pre>
+</body>
+</html>

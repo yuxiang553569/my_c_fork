@@ -1,0 +1,106 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: paopaotang - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP262.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/paopaotang.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\”Œœ∑‘¥≥Ã–Ú\paopaotang\paopaotang.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP262.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP263.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/paopaotang.pdb" /debug /machine:I386 /out:"Debug/paopaotang.exe" /pdbtype:sept 
+".\Debug\paopaotang.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP263.tmp"
+<h3>Output Window</h3>
+Compiling...
+paopaotang.cpp
+c:\program files\microsoft visual studio\vc98\include\winbase.h(216) : error C2146: syntax error : missing ';' before identifier 'Internal'
+c:\program files\microsoft visual studio\vc98\include\winbase.h(216) : error C2501: 'DWORD' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(216) : error C2501: 'Internal' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(217) : error C2146: syntax error : missing ';' before identifier 'InternalHigh'
+c:\program files\microsoft visual studio\vc98\include\winbase.h(217) : error C2501: 'DWORD' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(217) : error C2501: 'InternalHigh' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(218) : error C2146: syntax error : missing ';' before identifier 'Offset'
+c:\program files\microsoft visual studio\vc98\include\winbase.h(218) : error C2501: 'DWORD' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(218) : error C2501: 'Offset' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(219) : error C2146: syntax error : missing ';' before identifier 'OffsetHigh'
+c:\program files\microsoft visual studio\vc98\include\winbase.h(219) : error C2501: 'DWORD' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(219) : error C2501: 'OffsetHigh' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(220) : error C2146: syntax error : missing ';' before identifier 'hEvent'
+c:\program files\microsoft visual studio\vc98\include\winbase.h(220) : error C2501: 'HANDLE' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(220) : error C2501: 'hEvent' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(224) : error C2146: syntax error : missing ';' before identifier 'nLength'
+c:\program files\microsoft visual studio\vc98\include\winbase.h(224) : error C2501: 'DWORD' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(224) : error C2501: 'nLength' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(225) : error C2146: syntax error : missing ';' before identifier 'lpSecurityDescriptor'
+c:\program files\microsoft visual studio\vc98\include\winbase.h(225) : error C2501: 'LPVOID' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(225) : error C2501: 'lpSecurityDescriptor' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(226) : error C2146: syntax error : missing ';' before identifier 'bInheritHandle'
+c:\program files\microsoft visual studio\vc98\include\winbase.h(226) : error C2501: 'BOOL' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(226) : error C2501: 'bInheritHandle' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(230) : error C2146: syntax error : missing ';' before identifier 'hProcess'
+c:\program files\microsoft visual studio\vc98\include\winbase.h(230) : error C2501: 'HANDLE' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(230) : error C2501: 'hProcess' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(231) : error C2146: syntax error : missing ';' before identifier 'hThread'
+c:\program files\microsoft visual studio\vc98\include\winbase.h(231) : error C2501: 'HANDLE' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(231) : error C2501: 'hThread' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(232) : error C2146: syntax error : missing ';' before identifier 'dwProcessId'
+c:\program files\microsoft visual studio\vc98\include\winbase.h(232) : error C2501: 'DWORD' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(232) : error C2501: 'dwProcessId' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(233) : error C2146: syntax error : missing ';' before identifier 'dwThreadId'
+c:\program files\microsoft visual studio\vc98\include\winbase.h(233) : error C2501: 'DWORD' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(233) : error C2501: 'dwThreadId' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(241) : error C2146: syntax error : missing ';' before identifier 'dwLowDateTime'
+c:\program files\microsoft visual studio\vc98\include\winbase.h(241) : error C2501: 'DWORD' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(241) : error C2501: 'dwLowDateTime' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(242) : error C2146: syntax error : missing ';' before identifier 'dwHighDateTime'
+c:\program files\microsoft visual studio\vc98\include\winbase.h(242) : error C2501: 'DWORD' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(242) : error C2501: 'dwHighDateTime' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(250) : error C2146: syntax error : missing ';' before identifier 'wYear'
+c:\program files\microsoft visual studio\vc98\include\winbase.h(250) : error C2501: 'WORD' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(250) : error C2501: 'wYear' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(251) : error C2146: syntax error : missing ';' before identifier 'wMonth'
+c:\program files\microsoft visual studio\vc98\include\winbase.h(251) : error C2501: 'WORD' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(251) : error C2501: 'wMonth' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(252) : error C2146: syntax error : missing ';' before identifier 'wDayOfWeek'
+c:\program files\microsoft visual studio\vc98\include\winbase.h(252) : error C2501: 'WORD' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(252) : error C2501: 'wDayOfWeek' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(253) : error C2146: syntax error : missing ';' before identifier 'wDay'
+c:\program files\microsoft visual studio\vc98\include\winbase.h(253) : error C2501: 'WORD' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(253) : error C2501: 'wDay' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(254) : error C2146: syntax error : missing ';' before identifier 'wHour'
+c:\program files\microsoft visual studio\vc98\include\winbase.h(254) : error C2501: 'WORD' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(254) : error C2501: 'wHour' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(255) : error C2146: syntax error : missing ';' before identifier 'wMinute'
+c:\program files\microsoft visual studio\vc98\include\winbase.h(255) : error C2501: 'WORD' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(255) : error C2501: 'wMinute' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(256) : error C2146: syntax error : missing ';' before identifier 'wSecond'
+c:\program files\microsoft visual studio\vc98\include\winbase.h(256) : error C2501: 'WORD' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(256) : error C2501: 'wSecond' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(257) : error C2146: syntax error : missing ';' before identifier 'wMilliseconds'
+c:\program files\microsoft visual studio\vc98\include\winbase.h(257) : error C2501: 'WORD' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(257) : error C2501: 'wMilliseconds' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(260) : error C2065: 'WINAPI' : undeclared identifier
+c:\program files\microsoft visual studio\vc98\include\winbase.h(260) : error C2065: 'PTHREAD_START_ROUTINE' : undeclared identifier
+c:\program files\microsoft visual studio\vc98\include\winbase.h(260) : error C2501: 'DWORD' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(260) : error C2143: syntax error : missing ';' before '('
+c:\program files\microsoft visual studio\vc98\include\winbase.h(262) : error C2146: syntax error : missing ')' before identifier 'lpThreadParameter'
+c:\program files\microsoft visual studio\vc98\include\winbase.h(262) : error C2146: syntax error : missing ';' before identifier 'lpThreadParameter'
+c:\program files\microsoft visual studio\vc98\include\winbase.h(262) : error C2501: 'LPVOID' : missing storage-class or type specifiers
+c:\program files\microsoft visual studio\vc98\include\winbase.h(262) : fatal error C1004: unexpected end of file found
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+paopaotang.exe - 74 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MY_LOD - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP18.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/MY_LOD.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Documents and Settings\Administrator\桌面\MY_LOD\MY_LODView.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP18.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP19.tmp" with contents
+[
+opengl32.lib glu32.lib glut32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/MY_LOD.pdb" /debug /machine:I386 /out:"Debug/MY_LOD.exe" /pdbtype:sept 
+".\Debug\BMPLoad.obj"
+".\Debug\LandTex.obj"
+".\Debug\Lod.obj"
+".\Debug\MainFrm.obj"
+".\Debug\MY_LOD.obj"
+".\Debug\MY_LODDoc.obj"
+".\Debug\MY_LODView.obj"
+".\Debug\StdAfx.obj"
+".\Debug\MY_LOD.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP19.tmp"
+<h3>Output Window</h3>
+Compiling...
+MY_LODView.cpp
+C:\Documents and Settings\Administrator\桌面\MY_LOD\MY_LODView.cpp(476) : warning C4101: 'v1' : unreferenced local variable
+C:\Documents and Settings\Administrator\桌面\MY_LOD\MY_LODView.cpp(475) : warning C4101: 'r' : unreferenced local variable
+C:\Documents and Settings\Administrator\桌面\MY_LOD\MY_LODView.cpp(474) : warning C4101: 'aX' : unreferenced local variable
+C:\Documents and Settings\Administrator\桌面\MY_LOD\MY_LODView.cpp(474) : warning C4101: 'aZ' : unreferenced local variable
+C:\Documents and Settings\Administrator\桌面\MY_LOD\MY_LODView.cpp(477) : warning C4101: 'location_f' : unreferenced local variable
+C:\Documents and Settings\Administrator\桌面\MY_LOD\MY_LODView.cpp(473) : warning C4101: 'x' : unreferenced local variable
+C:\Documents and Settings\Administrator\桌面\MY_LOD\MY_LODView.cpp(472) : warning C4101: 'i' : unreferenced local variable
+C:\Documents and Settings\Administrator\桌面\MY_LOD\MY_LODView.cpp(473) : warning C4101: 'z' : unreferenced local variable
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/MY_LOD.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\BMPLoad.sbr" ".\Debug\LandTex.sbr" ".\Debug\Lod.sbr" ".\Debug\MainFrm.sbr" ".\Debug\MY_LOD.sbr" ".\Debug\MY_LODDoc.sbr" ".\Debug\MY_LODView.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+MY_LOD.exe - 0 error(s), 8 warning(s)
+</pre>
+</body>
+</html>
